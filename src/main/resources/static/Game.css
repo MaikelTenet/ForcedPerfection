@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: Consolas, "Courier New", monospace
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 50px
+}
+
+header h2 {
+    font-weight: normal;
+    color: #aaa;
+    margin-top: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px
+}
+
+#output {
+    background-color: #111;
+    border: 2px solid #444;
+    border-radius: 6px;
+    padding: 15px;
+    height: 350px;
+    overflow-y: auto;
+    margin-bottom: 15px
+}
+
+#command-form {
+    display: flex;
+    gap: 10px
+}
+
+#command-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 4px
+}
+
+#command-input:focus {
+    outline: none;
+    border-color: #6aa9ff
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6aa9ff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #8bbcff
+}
+
+.line {
+    line-height: 1.5
+}
+
+.player-input {
+    color: #6aa9ff;
+    font-style: italic;
+    margin-bottom: 3px
+}
+
+.game-output {
+    color: #e0e0e0;
+    margin-bottom: 15px
+}
+
+.player-input::before {
+    content: "> ";
+    color: #888
+}
+
+.player-input {
+    opacity: 0.9
+}
+
+.text-block {
+    margin-bottom: 16px
+}
+
+.text-line {
+    line-height: 1.1;
+    margin: 0
+}
+
+#output::-webkit-scrollbar {
+    width: 8px
+}
+
+#output::-webkit-scrollbar-track {
+    background: #111
+}
+
+#output::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px
+}
+
+#output::-webkit-scrollbar-thumb:hover {
+    background-color: #666
+}
